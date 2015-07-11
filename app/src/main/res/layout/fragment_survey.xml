@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sysintelliinc.surveyapp.Survey$PlaceholderFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    >
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+
+        android:text="@string/txtName"
+        android:textColor="@color/btnBgcolor"
+        android:textSize="15sp"
+        />
+    <EditText
+        android:id="@+id/editName"
+        android:layout_toRightOf="@+id/txtName"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_alignBaseline="@+id/txtName"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtName"
+        android:text="@string/txtAge"
+        android:textColor="@color/btnBgcolor"
+        android:textSize="15sp"
+        />
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/txtAge"
+        android:layout_alignBaseline="@+id/txtAge"
+        android:layout_below="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/txtEducation"
+        android:layout_below="@id/txtAge"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txtEducation"
+        android:textColor="@color/btnBgcolor"
+        android:textSize="15sp"
+        />
+    <EditText
+        android:id="@+id/editEducation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/txtEducation"
+        android:layout_toRightOf="@+id/txtEducation"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editAge"
+        />
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtEducation"
+        android:text="@string/txtSubmit"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_bg"
+        />
+</RelativeLayout>
+
+</FrameLayout>
